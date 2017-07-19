@@ -5,8 +5,8 @@
 session_start();
 
 $db['host'] = "localhost";  // DBサーバのurl
-$db['user'] = "se-ichi";
-$db['pass'] = "qwer";
+$db['user'] = "bgm1";
+$db['pass'] = "";
 $db['dbname'] = "logindb";
 
 // エラーメッセージの初期化
