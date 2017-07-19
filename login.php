@@ -8,6 +8,7 @@ $db['host'] = "localhost";  // DBサーバのurl
 $db['user'] = "bgm1";
 $db['pass'] = "";
 $db['dbname'] = "logindb";
+$db['table_name'] = "dbuser";
 
 // エラーメッセージの初期化
 $errorMessage = "";
@@ -37,7 +38,7 @@ if (isset($_POST["login"])) {
     $userid = $mysqli->real_escape_string($_POST["userid"]);
 
     // クエリの実行
-    $query = "SELECT * FROM dbuser WHERE name = '" . $userid . "'";
+    $query = "SELECT * FROM " . $db['table_name'] . " WHERE name = '" . $userid . "'";
     $result = $mysqli->query($query);
     if (!$result) {
       print('クエリーが失敗しました。' . $mysqli->error);
