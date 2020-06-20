@@ -5,8 +5,8 @@
 session_start();
 
 $db['host'] = "localhost";  // DBサーバのurl
-$db['user'] = "bgm1";
-$db['pass'] = "";
+$db['user'] = "logindb";
+$db['pass'] = "logindb";
 $db['dbname'] = "logindb";
 $db['table_name'] = "dbuser";
 
@@ -97,3 +97,5 @@ if (isset($_POST["login"])) {
       </form>
   </body>
 </html>
+
+<!-- 修正時刻： Sat Jun 20 16:27:57 2020 -->
